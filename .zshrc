@@ -85,5 +85,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab -nosplash -nodisplay"
+alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab -nosplash -nodesktop -display :0.0"
 
