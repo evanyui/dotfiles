@@ -28,6 +28,7 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'w0rp/ale'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-commentary'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -109,4 +110,4 @@ colorscheme solarized
 
 " Editing customization
 inoremap { {<CR>}<ESC>O
-
+noremap <leader>/ :Commentary<cr>
