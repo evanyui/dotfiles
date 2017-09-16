@@ -111,3 +111,7 @@ colorscheme solarized
 " Editing customization
 inoremap { {<CR>}<ESC>O
 noremap <leader>/ :Commentary<cr>
+
+" Set no backup
+set nobackup
+set noswapfile
