@@ -29,6 +29,7 @@ Plugin 'w0rp/ale'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-commentary'
+Plugin 'TagHighlight'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
