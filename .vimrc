@@ -93,6 +93,19 @@ set clipboard=unnamed
 
 " Ale see: :help ale-completion
 let g:ale_completion_enabled = 1
+let g:airline#extensions#ale#enabled = 1
+
+" Editing customization
+inoremap { {<CR>}<ESC>O
+noremap <leader>/ :Commentary<cr>
+
+" Set no backup
+set nobackup
+set noswapfile
+
+" Background Settings
+set background=dark
+colorscheme solarized
 
 " Syntax Highlighting
 let java_mark_braces_in_parens_as_errors=1
@@ -104,15 +117,3 @@ let java_highlight_functions="style"
 let java_minlines = 150
 let python_highlight_all=1
 syntax on
-
-" Background Settings
-set background=dark
-colorscheme solarized
-
-" Editing customization
-inoremap { {<CR>}<ESC>O
-noremap <leader>/ :Commentary<cr>
-
-" Set no backup
-set nobackup
-set noswapfile
