@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/evan/.atom'
+let g:netrw_dirhist_2='/Users/evan/Desktop/homePage/.git'
+let g:netrw_dirhist_3='/Users/evan/Desktop/evanyui.github.io/.git'
+let g:netrw_dirhist_4='/Users/evan/.ssh'

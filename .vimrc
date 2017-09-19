@@ -5,8 +5,6 @@ filetype on                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-let g:ale_emit_conflict_warnings = 0
-
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -14,22 +12,13 @@ let g:ale_emit_conflict_warnings = 0
 Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
-Plugin 'jnurmine/Zenburn'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'w0rp/ale'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-commentary'
-Plugin 'TagHighlight'
+Plugin 'vim-scripts/indentpython.vim'   "python indentation
+Plugin 'lifepillar/vim-solarized8'
+Plugin 'scrooloose/nerdtree'    "vim file navigation
+Plugin 'tpope/vim-fugitive'     "git in vim
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}     "show powerline below
+Plugin 'tpope/vim-commentary'   "commenting tool
+Plugin 'jaxbot/semantic-highlight.vim'  "highlight every variable
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -48,15 +37,12 @@ nnoremap <C-LEFT> <C-W><C-H>
 " Mouse navigation
 set mouse=n
 
-" Enable folding
+" Enable folding with spacebar
 set foldmethod=indent
-set foldlevel=99
+set foldlevel=20
+nnoremap <space> za 
 
-" Enable folding with the spacebar
-nnoremap <space> za
-
-" Folding and Indentation
-let g:SimpylFold_docstring_preview=1
+" Indentation
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -64,9 +50,10 @@ set textwidth=79
 set expandtab
 set autoindent
 set fileformat=unix
-
 set encoding=utf-8
 set backspace=2
+filetype on
+filetype plugin indent on
 
 "python with virtualenv support
 py << EOF
@@ -84,36 +71,40 @@ map <C-\> :NERDTreeToggle<CR>
 
 " Set line number
 set nu
+set hlsearch
+set clipboard=unnamed
 
 " Always show status bar and customize color
 set laststatus=2
-let g:airline_theme='powerlineish'
 
-set clipboard=unnamed
+" Powerline
+let g:Powerline_symbols = 'fancy'
 
-" Ale see: :help ale-completion
-let g:ale_completion_enabled = 1
-let g:airline#extensions#ale#enabled = 1
-
-" Editing customization
-inoremap { {<CR>}<ESC>O
-noremap <leader>/ :Commentary<cr>
+" Commenting tool with control & slash
+noremap <C-_> :Commentary<cr>
 
 " Set no backup
 set nobackup
 set noswapfile
 
+" Semtantic colors list
+let g:semanticTermColors = [1,5,17,77,57,18,20,68,21,35,75,78,39,41,81]
+
 " Background Settings
+set term=xterm-256color
 set background=dark
-colorscheme solarized
+colorscheme solarized8_dark
 
 " Syntax Highlighting
-let java_mark_braces_in_parens_as_errors=1
+:nnoremap <Leader>s :SemanticHighlightToggle<cr>
+syntax on
 let java_highlight_all=1
+let java_mark_braces_in_parens_as_errors=1
 let java_highlight_debug=1
 let java_ignore_javadoc=1
 let java_highlight_java_lang_ids=1
 let java_highlight_functions="style"
 let java_minlines = 150
 let python_highlight_all=1
-syntax on
+
+
