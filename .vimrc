@@ -88,7 +88,7 @@ set nobackup
 set noswapfile
 
 " Semtantic colors list
-let g:semanticTermColors = [1,5,17,77,57,18,20,68,21,35,75,78,39,41,81]
+let g:semanticTermColors = [1,5,17,77,18,20,68,21,35,75,78,39,41,81]
 
 " Background Settings
 set term=xterm-256color
