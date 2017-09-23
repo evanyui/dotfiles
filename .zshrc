@@ -93,3 +93,7 @@ TERM=xterm-256color
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab -nosplash -nodesktop -display :0.0"
 alias py="python3"
+
+# Project shortcut alias
+alias ulink="cd ~/Desktop/Ulink"
+alias huffman="cd ~/Desktop/HuffmanZip/src/main/java"
