@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$PATH:/usr/local/mongodb/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/evan/.oh-my-zsh
@@ -95,5 +96,5 @@ alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab -nosplash -nodesktop -d
 alias py="python3"
 
 # Project shortcut alias
-alias ulink="cd ~/Desktop/Ulink"
+alias clink="cd ~/Desktop/Clink"
 alias huffman="cd ~/Desktop/HuffmanZip/src/main/java"
