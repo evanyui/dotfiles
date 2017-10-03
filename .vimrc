@@ -19,6 +19,7 @@ Plugin 'tpope/vim-fugitive'     "git in vim
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}     "show powerline below
 Plugin 'tpope/vim-commentary'   "commenting tool
 Plugin 'jaxbot/semantic-highlight.vim'  "highlight every variable
+Plugin 'jelera/vim-javascript-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
