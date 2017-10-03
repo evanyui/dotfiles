@@ -37,6 +37,10 @@ nnoremap <C-LEFT> <C-W><C-H>
 " Mouse navigation
 set mouse=n
 
+" Screen navigation
+nnoremap <C-J> <C-E>
+nnoremap <C-K> <C-Y>
+
 " Enable folding with spacebar
 set foldmethod=indent
 set foldlevel=20
