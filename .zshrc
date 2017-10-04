@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 KEYTIMEOUT=1
 
 # Syntax highlighting for vim
-TERM=xterm-256color
+TERM=xterm-256color-italic
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
