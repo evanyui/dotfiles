@@ -13,13 +13,13 @@ Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'vim-scripts/indentpython.vim'   "python indentation
-Plugin 'lifepillar/vim-solarized8'
+Plugin 'lifepillar/vim-solarized8'  "solarized theme
 Plugin 'scrooloose/nerdtree'    "vim file navigation
 Plugin 'tpope/vim-fugitive'     "git in vim
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}     "show powerline below
 Plugin 'tpope/vim-commentary'   "commenting tool
-Plugin 'jaxbot/semantic-highlight.vim'  "highlight every variable
-Plugin 'jelera/vim-javascript-syntax'
+Plugin 'jelera/vim-javascript-syntax'   "highlight javascript syntax
+Plugin 'davidhalter/jedi-vim'   "python autocomplete
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -92,16 +92,15 @@ noremap <C-_> :Commentary<cr>
 set nobackup
 set noswapfile
 
-" Semtantic colors list
-let g:semanticTermColors = [1,5,17,77,18,20,68,21,35,75,78,39,41,81]
-
 " Background Settings
 set term=xterm-256color
 set background=dark
-colorscheme solarized8_dark
+colorscheme space-vim-dark
+color space-vim-dark
+hi Comment cterm=italic
+let g:space_vim_dark_background = 234
 
 " Syntax Highlighting
-:nnoremap <Leader>s :SemanticHighlightToggle<cr>
 syntax on
 let java_highlight_all=1
 let java_mark_braces_in_parens_as_errors=1
@@ -111,5 +110,4 @@ let java_highlight_java_lang_ids=1
 let java_highlight_functions="style"
 let java_minlines = 150
 let python_highlight_all=1
-
 
