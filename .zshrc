@@ -2,6 +2,9 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:/usr/local/mongodb/bin
 
+# Added by conda
+export PATH="/Users/evan/miniconda3/bin:$PATH"
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/evan/.oh-my-zsh
 
