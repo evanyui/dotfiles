@@ -60,6 +60,9 @@ set backspace=2
 filetype on
 filetype plugin indent on
 
+" Set Width limit
+set tw=79
+
 "python with virtualenv support
 py << EOF
 import os
