@@ -99,7 +99,7 @@ alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab -nosplash -nodesktop -d
 alias py="python3"
 
 # Project shortcut alias
-alias clink="cd ~/Desktop/Clink"
+alias clink="ssh bitnami@www.clink.live"
 alias clinks="cd ~/Desktop/Clink/Clink-Server"
 alias clinkc="cd ~/Desktop/Clink/Clink-Client"
 alias vrc="vim ~/.vimrc"
