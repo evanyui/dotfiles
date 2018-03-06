@@ -60,9 +60,6 @@ set backspace=2
 filetype on
 filetype plugin indent on
 
-" Set Width limit
-set tw=79
-
 "python with virtualenv support
 py << EOF
 import os
@@ -73,9 +70,9 @@ if 'VIRTUAL_ENV' in os.environ:
   execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-" NerdTree Settings
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
-map <C-\> :NERDTreeToggle<CR>
+" Set no backup
+set nobackup
+set noswapfile
 
 " Set line number
 set nu
@@ -88,12 +85,15 @@ set laststatus=2
 " Powerline
 let g:Powerline_symbols = 'fancy'
 
+" NerdTree Settings
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+map <C-\> :NERDTreeToggle<CR>
+
 " Commenting tool with control & slash
 noremap <C-_> :Commentary<cr>
 
-" Set no backup
-set nobackup
-set noswapfile
+" Settings for jedi-vim
+let g:jedi#show_call_signatures = "2"
 
 " Background Settings
 set term=xterm-256color
@@ -101,7 +101,7 @@ set background=dark
 colorscheme space-vim-dark
 color space-vim-dark
 hi Comment cterm=italic
-let g:space_vim_dark_background = 234
+let g:space_vim_dark_background = 235
 
 " Syntax Highlighting
 syntax on
