@@ -20,6 +20,7 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}     "show powerl
 Plugin 'tpope/vim-commentary'   "commenting tool
 Plugin 'jelera/vim-javascript-syntax'   "highlight javascript syntax
 Plugin 'davidhalter/jedi-vim'   "python autocomplete
+Plugin 'tpope/vim-surround'     "vim surround
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -93,6 +94,7 @@ map <C-\> :NERDTreeToggle<CR>
 noremap <C-_> :Commentary<cr>
 
 " Settings for jedi-vim
+let g:jedi#use_splits_not_buffers = "right"
 let g:jedi#show_call_signatures = "2"
 
 " Background Settings
