@@ -1,9 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:/usr/local/mongodb/bin
 
 # Added by conda
-export PATH="/Users/evan/miniconda3/bin:$PATH"
+export PATH=/usr/local/anaconda3/bin:"$PATH"
+export PATH=$PATH:/usr/local/mongodb/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/evan/.oh-my-zsh
@@ -95,7 +95,7 @@ TERM=xterm-256color-italic
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab -nosplash -nodesktop -display :0.0"
+# alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab -nosplash -nodesktop -display :0.0"
 alias py="python3"
 
 # Project shortcut alias
@@ -103,4 +103,3 @@ alias clink="ssh clinksme@www.clink.live"
 alias clinks="cd ~/Desktop/Clink/Clink-Server"
 alias clinkc="cd ~/Desktop/Clink/Clink-Client"
 alias vrc="vim ~/.vimrc"
-alias dmcs="cd ~/Desktop/dmcs/"
