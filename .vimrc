@@ -13,7 +13,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'vim-scripts/indentpython.vim'   "python indentation
-Plugin 'lifepillar/vim-solarized8'  "solarized theme
 Plugin 'scrooloose/nerdtree'    "vim file navigation
 Plugin 'tpope/vim-fugitive'     "git in vim
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}     "show powerline below
@@ -21,6 +20,7 @@ Plugin 'tpope/vim-commentary'   "commenting tool
 Plugin 'jelera/vim-javascript-syntax'   "highlight javascript syntax
 Plugin 'davidhalter/jedi-vim'   "python autocomplete
 Plugin 'tpope/vim-surround'     "vim surround
+Plugin 'Ardakilic/vim-tomorrow-night-theme'     "TomorrowNight Theme
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -100,10 +100,7 @@ let g:jedi#show_call_signatures = "2"
 " Background Settings
 set term=xterm-256color
 set background=dark
-colorscheme space-vim-dark
-color space-vim-dark
-hi Comment cterm=italic
-let g:space_vim_dark_background = 235
+colorscheme Tomorrow-Night
 
 " Syntax Highlighting
 syntax on
