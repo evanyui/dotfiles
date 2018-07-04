@@ -18,7 +18,6 @@ Plugin 'tpope/vim-fugitive'     "git in vim
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}     "show powerline below
 Plugin 'tpope/vim-commentary'   "commenting tool
 Plugin 'jelera/vim-javascript-syntax'   "highlight javascript syntax
-Plugin 'davidhalter/jedi-vim'   "python autocomplete
 Plugin 'tpope/vim-surround'     "vim surround
 Plugin 'Ardakilic/vim-tomorrow-night-theme'     "TomorrowNight Theme
 
