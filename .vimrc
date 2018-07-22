@@ -77,6 +77,8 @@ set noswapfile
 " Set line number
 set nu
 set hlsearch
+
+" Share clipboard
 set clipboard=unnamed
 
 " Always show status bar and customize color
